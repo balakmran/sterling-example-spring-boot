@@ -38,4 +38,10 @@ Coverage:             on   (JaCoCo 0.8.16; instruction >= 80%, branch >= 70%; in
 CI runs the build under `STANDARD` and `STRICT`. The service has no database,
 so it needs only a JDK 25.
 
+On pull requests a third job checks formatting only in the files that differ
+from `main`, the way a team adopts Sterling without a reformat commit. It sets
+`format.ratchetFrom` from an init script, [`.github/ratchet.init.gradle`](.github/ratchet.init.gradle),
+so the build script stays as it is, and checks out with `fetch-depth: 0`
+because ratchet needs `main`'s history.
+
 Licensed under the [Apache License 2.0](LICENSE).
