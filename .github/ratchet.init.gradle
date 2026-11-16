@@ -1,0 +1,7 @@
+// Checks formatting only in files that differ from main, as a team adopting Sterling without a
+// reformat commit would; set here so the build script stays plugin, profile and excludes.
+allprojects {
+    pluginManager.withPlugin('dev.balakmran.sterling') {
+        sterling.format.ratchetFrom = 'origin/main'
+    }
+}
