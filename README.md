@@ -23,7 +23,7 @@ and formats nothing under `build/generated`.
 ```
 
 ```
-Sterling 0.2.0
+Sterling 0.3.0
 Profile:              STANDARD
 Gate wired to check:  yes
 Daemon JVM:           25

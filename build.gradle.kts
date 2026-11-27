@@ -3,7 +3,7 @@ plugins {
     id("org.springframework.boot") version "4.1.2"
     id("io.spring.dependency-management") version "1.1.7"
     id("org.openapi.generator") version "7.27.0"
-    id("dev.balakmran.sterling") version "0.2.0"
+    id("dev.balakmran.sterling") version "0.3.0"
 }
 
 group = "dev.balakmran"
